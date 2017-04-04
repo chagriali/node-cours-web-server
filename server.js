@@ -16,11 +16,11 @@ app.use((req,res,next) => {
     console.log(req.method);
     next();
 });
-
+/*
 app.use((req,res,next) => {
   res.render('maintenance.hbs')
 });
-
+*/
 
 app.get('/',(req,res) => {
   res.render('home.hbs',{
