@@ -22,6 +22,12 @@ app.use((req,res,next) => {
 });
 */
 
+app.get('/projects',(req,res) =>{
+  res.render('projects.hbs',{
+    projects : 'Random pr'
+  });
+});
+
 app.get('/',(req,res) => {
   res.render('home.hbs',{
     Title: 'Home Page',
